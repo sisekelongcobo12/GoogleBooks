@@ -1,0 +1,33 @@
+
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+    width: 100vw; 
+}
+
+.card{ 
+    float: left;
+    background-color: #ffffff;
+    border-radius: 1px;
+    padding: 15px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.books{
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 97lvw;
+}
+.book{
+    padding-right: 20px;
+    display: inline-block;
+}
+.thumbnail{
+    height: 150px;
+    width: 120px;
+}
