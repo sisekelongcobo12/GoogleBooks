@@ -66,9 +66,6 @@ function createElements(bookInfo, bookId, saleInfo) {
     row.appendChild(column);
 
     document.getElementById('main').appendChild(row);
-
-    console.log(bookInfo.title);
-    console.log(bookInfo.imageLinks?.thumbnail);
 }
 
 function truncateString(title, num) {
@@ -77,14 +74,6 @@ function truncateString(title, num) {
     }
     return title.slice(0, num) + '...';
 }
-
-
-
-
-
-
-
-
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -95,94 +84,3 @@ form.addEventListener("submit", (e) => {
         //findBooks(search.value);
     }
 });
-
-// function handleResponse(response) {
-//     for (var i = 0; i < response.items.length; i++) {
-//       var item = response.items[i];
-//       // in production code, item.text should have the HTML entities escaped.
-//       document.getElementById("main").innerHTML += "<br>" + item.volumeInfo.title;
-//     }
-//   }
-
-
-// function searchBooks(title, callback) {
-//     // Replace 'your_api_key' with your actual API key
-//     const apiKey = 'AIzaSyBErWJiFozsG9xDIqBAjOY_nShF0Ol1868';
-//     const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=title:${title}&key=${apiKey}&callback=${callback}`;
-
-//     // Create a script element to make the JSONP request
-//     const script = document.createElement('script');
-//     script.src = apiUrl;
-
-//     // Append the script to the document to trigger the request
-//     document.head.appendChild(script);
-// }
-
-// // Define a callback function to handle the API response
-// function handleBooksResponse(data) {
-//     // Accessing information from the response
-//     data.items.forEach(item => {
-//         const volumeInfo = item.volumeInfo;
-//         const title = volumeInfo.title || 'N/A';
-//         const authors = volumeInfo.authors ? volumeInfo.authors.join(', ') : 'N/A';
-//         const summary = volumeInfo.description || 'N/A';
-//         const coverImageURL = volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : 'N/A';
-
-//         const cardSection = document.createElement('section');
-//         cardSection.setAttribute('class', 'card');
-
-//         const rowSection = document.createElement('section');
-//         rowSection.setAttribute('class', 'row');
-        
-//         const colSection = document.createElement('section');
-//         colSection.setAttribute('class', 'col');
-        
-//         const centerSection = document.createElement('section');
-//         centerSection.setAttribute('class', 'card');
-        
-//         const img = document.createElement('img');
-//         img.setAttribute('class', 'thumbnail');
-        
-//         const bookTitle = document.createElement('h3');
-//         bookTitle.setAttribute('id', 'title');
-        
-//         const author = document.createElement('h3');
-//         author.setAttribute('id', 'author');
-        
-//         const saleability = document.createElement('h3');
-//         saleability.setAttribute('id', 'sale');
-
-//         img.src = coverImageURL;
-//         bookTitle.innerHTML = `${title}`;
-//         author.innerHTML = `${authors}`;
-
-//         centerSection.appendChild(img);
-//         cardSection.appendChild(centerSection);
-//         cardSection.appendChild(author);
-//         cardSection.appendChild(bookTitle);
-//         colSection.appendChild(cardSection);
-//         rowSection.appendChild(colSection);
-
-//         main.appendChild(rowSection);
-
-
-
-
-//         // Now you can use these variables in your application
-//         console.log(`Title: ${title}`);
-//         console.log(`Authors: ${authors}`);
-//         console.log(`Summary: ${summary}`);
-//         console.log(`Cover Image URL: ${coverImageURL}`);
-//         console.log('\n');
-//     });
-// }
-
-
-
-
-// // Make the Books API request with the search term and callback function
-// //searchBooks(search, 'handleBooksResponse');
-
-
-
-// // api key= AIzaSyBErWJiFozsG9xDIqBAjOY_nShF0Ol1868
