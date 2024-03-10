@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookDetails.css">
+    <script src="bookDetails.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Book Shelf</a>
+        <form role="search" id="form">
+            <input type="search" name="q" id="query" placeholder="Search">
+        </form>
+    </nav>
+    <section class="main">
+        <figure>
+            <img src="harry.jfif" alt="" id="thumbnail" width="400px" height="600px">
+        </figure>
+    
+        <section class="book-details">
+            <p id="book-title">Book Title</p>
+            <p id="author">Authors</p>
+            <p id="isbn">ISBN</p>
+            <p id="price">Price</p>
+            <p id="description">Description</p>
+        </section>
+
+        <section class="buttons">
+            <button type="button" id="but-btn" onclick="toBuy()">BUY</button>
+            <button type="button" id="preview-btn">PREVIEW</button>
+        </section>
+    
+        
+    </section>
+    
+    
+
+</body>
+</html>
