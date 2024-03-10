@@ -3,12 +3,20 @@
 body{
     background-color: #ffffff;
     font-family: sans-serif;
+    margin-top: 60px;
+}
+.main{
+    display: flex;
 }
 
 h3, p{
     color: black;
 }
 nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
     overflow: hidden;
     background-color: #131720;
     padding: 6px;
@@ -44,7 +52,8 @@ input{
 }
 .col{
     float: left;
-    width: 25%;
+    width: 20%;
+    box-sizing: border-box;
     padding: 10px 10px;
 }
 .card{
@@ -52,7 +61,7 @@ input{
     border-radius: 5px;
     text-align: center;
     padding: 5px;
-    height: 300px;
+    height: 280px;
 }
 .card button{
     background-color: #131720;
@@ -60,19 +69,6 @@ input{
     height: 30px;
     width: auto;
 }
-/* bg color #151f30 */
-figure, .book-details{
-    height: 500px;
-    width: 400px;
-    background-color: #f2eded;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-figure{
-    text-align: center;
-}
-.main{
-    display: flex;
-}
+
+
 
