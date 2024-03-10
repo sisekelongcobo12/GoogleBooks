@@ -1,0 +1,24 @@
+.book-details{
+    border-radius: 5px;
+    padding: 5px;
+    height: 500px;
+    width: 800px;
+    margin-top: 20px;
+}
+
+#description{
+    height: 300px;
+}
+
+.buttons{
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.buttons button{
+    margin-bottom: 20px;
+    
+    background-color: #f3f2f5;
+    height: 30px;
+    width: 200px;
+    border-radius: none;
+}
